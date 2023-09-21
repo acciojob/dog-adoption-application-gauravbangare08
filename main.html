@@ -3,11 +3,85 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+	<style>
+  form {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  option {
+    padding: 5px;
+  }
+
+  input[type="submit"] {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<form>
+<h1>Dog Adoption Application</h1>
+<label for="name">Name</label>
+<input type="text" id="name" name="name" placeholder="Name" required>
+<label for="phone">Phone Number</label>
+<input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+<label for="address">Address</label>
+<input type="text" id="address" name="address" placeholder="Address" required>
+<label for="checkbox"><input type="checkbox" id="checkbox" name="checkbox">Have you ever lived with a Dog before?</label>
+<label for="multiSelect">Please select your preferred breeds</label>
+<select id="multiSelect" name="multiSelect" multiple required>
+<option value="Labrador Retriever">Labrador Retriever</option>
+<option value="German Shepherd">German Shepherd</option>
+<option value="Golden Retriever">Golden Retriever</option>
+<option value="Beagle">Beagle</option>
+<option value="Poodle">Poodle</option>
+<option value="Bulldog">Bulldog</option>
+</select>
+<input type="submit" id="submit" name="submit" value="Submit">
+</form>
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
